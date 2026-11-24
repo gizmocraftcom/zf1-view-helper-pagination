@@ -20,6 +20,7 @@
  * @version    $Id$
  */
 
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * @category   Zend
@@ -27,9 +28,9 @@
  * @subpackage UnitTests
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @group      Zend_View
- * @group      Zend_View_Helper
  */
+#[Group('Zend_View')]
+#[Group('Zend_View_Helper')]
 class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
 {
     /**
@@ -97,9 +98,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         }
     }
 
-    /**
-     * @group ZF-4037
-     */
+    #[Group('ZF-4037')]
     public function testUsesDefaultScrollingStyleIfNoneSupplied()
     {
         // First we'll make sure the base case works
@@ -115,9 +114,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         $this->assertStringContainsString('page count (11) equals pages in range (11)', $output, $output);
     }
 
-    /**
-     * @group ZF-4153
-     */
+    #[Group('ZF-4153')]
     public function testUsesPaginatorFromViewIfNoneSupplied()
     {
         $this->_viewHelper->view->paginator = $this->_paginator;
@@ -132,9 +129,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         $this->assertStringContainsString('pagination control', $output, $output);
     }
 
-    /**
-     * @group ZF-4153
-     */
+    #[Group('ZF-4153')]
     public function testThrowsExceptionIfNoPaginatorFound()
     {
         Zend_View_Helper_PaginationControl::setDefaultViewPartial('testPagination.phtml');
@@ -147,9 +142,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         }
     }
 
-    /**
-     * @group ZF-4233
-     */
+    #[Group('ZF-4233')]
     public function testAcceptsViewPartialInOtherModule()
     {
         try {
@@ -163,9 +156,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         }
     }
 
-    /**
-     * @group ZF-4328
-     */
+    #[Group('ZF-4328')]
     public function testUsesPaginatorFromViewOnlyIfNoneSupplied()
     {
         $this->_viewHelper->view->paginator = $this->_paginator;
@@ -176,9 +167,7 @@ class Zend_View_Helper_PaginationControlTest extends PHPUnit\Framework\TestCase
         $this->assertStringContainsString('page count (3)', $output, $output);
     }
 
-    /**
-     * @group ZF-4878
-     */
+    #[Group('ZF-4878')]
     public function testCanUseObjectForScrollingStyle()
     {
         $all = new Zend_Paginator_ScrollingStyle_All();
