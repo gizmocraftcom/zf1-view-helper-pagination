@@ -1,7 +1,7 @@
 # Zend Framework 1 - View_Helper_PaginationControl
 
-[![Build](https://github.com/gizmocraftcom/zf1-view-helper-paginationcontrol/workflows/Build/badge.svg?event=push)](https://github.com/gizmocraftcom/zf1-view-helper-paginationcontrol/actions?query=workflow%3ABuild+event%3Apush)
-[![codecov](https://codecov.io/gh/gizmocraftcom/zf1-view-helper-paginationcontrol/branch/master/graph/badge.svg)](https://codecov.io/gh/gizmocraftcom/zf1-view-helper-paginationcontrol)
+[![Build](https://github.com/gizmocraftcom/zf1-view-helper-pagination/workflows/Build/badge.svg?event=push)](https://github.com/gizmocraftcom/zf1-view-helper-pagination/actions?query=workflow%3ABuild+event%3Apush)
+[![codecov](https://codecov.io/gh/gizmocraftcom/zf1-view-helper-pagination/branch/master/graph/badge.svg)](https://codecov.io/gh/gizmocraftcom/zf1-view-helper-pagination)
 [![Latest Stable Version](https://poser.pugx.org/gizmocraft/zendframework1-view-helper-paginationcontrol/v/stable)](https://packagist.org/packages/gizmocraft/zendframework1-view-helper-paginationcontrol)
 [![Total Downloads](https://poser.pugx.org/gizmocraft/zendframework1-view-helper-paginationcontrol/downloads)](https://packagist.org/packages/gizmocraft/zendframework1-view-helper-paginationcontrol)
 [![License](https://poser.pugx.org/gizmocraft/zendframework1-view-helper-paginationcontrol/license)](https://packagist.org/packages/gizmocraft/zendframework1-view-helper-paginationcontrol)
